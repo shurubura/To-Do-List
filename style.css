@@ -1,0 +1,152 @@
+* {
+	font-family: Antipasto Pro;
+}
+body {
+	background: linear-gradient(305.1deg, #FF9900 1.15%, #FF2E00 98.87%);
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+h1.main-title {
+	color: white;
+	font-weight: bold;
+	font-size:64pt;
+}
+
+.to-do, .add-new {
+	background: white;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 30px;
+	overflow: hidden;
+	padding:0 15px;
+	margin:10px 0;
+}
+
+h2.title {
+	color:black;
+	font-weight: bold;
+	font-size: 48pt;
+}
+
+#new {
+	background: #ebebeb;
+	border: 1px solid #c9c9c9;
+	box-sizing: border-box;
+	border-radius: 30px;
+	margin-left: 10%;
+	margin-bottom: 15px;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 30px;
+	padding-left: 10px;
+	width:65%;
+}
+#new::placeholder {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 15px;
+	text-align: left;
+	color:black;
+}
+.add{
+	border: 2px solid #00B432;
+	color: #00B432;
+	width:30px;
+	font-size:30px;
+	height: 30px;
+	border-radius: 50%;
+	line-height: 30px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.delete{
+	border: 2px solid #FF0000;
+	color: #FF0000;
+	width:30px;
+	font-size:30px;
+	height: 30px;
+	border-radius: 50%;
+	line-height: 30px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.form-check-input{
+	cursor: pointer;
+	height: 30px;
+	width: 30px;
+}
+.roundedCheckbox {
+  float:left;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  background: #fcfff4;
+  background: linear-gradient(#FF3001,#FF9901);
+  border-radius: 50px;
+  box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.checked{
+  background: linear-gradient(#029623,#71FF01);
+}
+.roundedCheckbox input[type=checkbox]+label {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  cursor: pointer;
+  background: linear-gradient(top, #222 0%, #45484d 100%);
+  border-radius: 50px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 1);
+}
+.roundedCheckbox input[type=checkbox]+label:after {
+  content: '';
+  width: 9px;
+  height: 5px;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  border: 3px solid #fcfff4;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+.roundedCheckbox input[type=checkbox]+label:hover::after {
+  opacity: 0.3;
+}
+.roundedCheckbox input[type=checkbox] {
+  visibility: hidden;
+}
+.roundedCheckbox.checked input[type=checkbox] + label:after {
+  opacity: 1;
+}
+.roundedCheckbox span {
+	width:80%;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48pt;
+	line-height: 41px;
+}
+.check-div {
+	margin:20px 0;
+}
+.check-div span{
+	padding-left: 15px;
+	line-height: 30px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 41px;
+	text-align: center;
+}
+
+span.done {
+	text-decoration: line-through;
+	color:#919191;
+}
